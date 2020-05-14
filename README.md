@@ -16,15 +16,14 @@ The following **required** functionality is completed:
 The following **extensions** are implemented:
 
 * [X] User sees a descriptive error message if internet is not available
-* [ ] List anything else that you did to improve the app functionality or design!
+* [X] Added the Yelp Stars to for the ratings (instead of the Android rating bar)
+* [X] Added a custom color palette
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='Yelp/yelpclone.gif' title='Video Walkthrough' height = '800' width='' alt='Video Walkthrough' />
 
 ## Notes
 
