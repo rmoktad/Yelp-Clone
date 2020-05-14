@@ -32,7 +32,49 @@ class RestaurantsAdapter(val context: Context, val restaurants: List<YelpRestaur
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         fun bind(restaurant: YelpRestaurant){
             itemView.tvName.text = restaurant.name
-            itemView.ratingBar.rating = restaurant.rating.toFloat()
+//            itemView.ratingBar.rating = restaurant.rating.toFloat()
+
+            if(restaurant.rating.toFloat() < 1){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_0)
+            }
+
+            else if(restaurant.rating.toFloat() < 1.5){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_1)
+            }
+
+            else if(restaurant.rating.toFloat() >= 1.5 && restaurant.rating.toFloat() < 2){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_1_half)
+            }
+
+            else if(restaurant.rating.toFloat() >= 2 && restaurant.rating.toFloat() < 2.5){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_2)
+            }
+
+            else if(restaurant.rating.toFloat() >= 2.5 && restaurant.rating.toFloat() < 3){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_2_half)
+            }
+
+            else if(restaurant.rating.toFloat() >= 3 && restaurant.rating.toFloat() < 3.5){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_3)
+            }
+
+            else if(restaurant.rating.toFloat() >= 3.5 && restaurant.rating.toFloat() < 4){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_3_half)
+            }
+
+            else if(restaurant.rating.toFloat() >= 4 && restaurant.rating.toFloat() < 4.5){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_4)
+            }
+
+            else if(restaurant.rating.toFloat() >= 4.5 && restaurant.rating.toFloat() < 5){
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_4_half)
+            }
+
+            else{
+                itemView.ratingStars.setImageResource(R.drawable.stars_small_5)
+            }
+
+
             itemView.tvNumReviews.text = "${restaurant.numRevies} Reviews"
             itemView.tvAddress.text = restaurant.location.address
             itemView.tvCategory.text = restaurant.categories[0].title
