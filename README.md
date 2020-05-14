@@ -27,11 +27,11 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The only issue that I ran into was that if the name of the restaurant was too long, it would cover the text showing the distance in miles.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2020 Raaisa Moktader
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
